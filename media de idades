@@ -1,0 +1,27 @@
+Escreva um programa que solicite ao usuário a idade de várias pessoas e, no final, calcule e exiba a média das idades.
+
+
+soma_idades = 0
+quantidade_pessoas = 0
+
+while True:
+    idade = input("Digite a idade da pessoa (ou 'parar' para encerrar): ")
+
+    if idade.lower() == "parar":
+        break
+
+    try:
+        idade = int(idade)
+        if idade >= 0:
+            soma_idades += idade
+            quantidade_pessoas += 1
+        else:
+            print("Por favor, insira uma idade válida (número inteiro positivo).")
+    except ValueError:
+        print("Por favor, insira uma idade válida (número inteiro positivo) ou 'parar' para encerrar.")
+
+if quantidade_pessoas > 0:
+    media_idades = soma_idades / quantidade_pessoas
+    print(f"A média das idades das {quantidade_pessoas} pessoas é: {media_idades:.2f}")
+else:
+    print("Nenhuma idade válida foi inserida.")
