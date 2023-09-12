@@ -1,0 +1,10 @@
+Escreva um programa que gere um número aleatório dentro de um intervalo especificado pelo usuário.
+
+import random
+
+limite_inferior = int(input("Digite o limite inferior do intervalo: "))
+limite_superior = int(input("Digite o limite superior do intervalo: "))
+
+numero_aleatorio = random.randint(limite_inferior, limite_superior)
+
+print(f"O número aleatório dentro do intervalo [{limite_inferior}, {limite_superior}] é: {numero_aleatorio}")
