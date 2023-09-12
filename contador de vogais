@@ -1,0 +1,21 @@
+Crie um programa que conte o número de vogais em uma string fornecida pelo usuário.
+
+  
+string = input("Digite uma string: ")
+
+
+string = string.lower()
+
+
+contagem_vogais = 0
+
+
+vogais = "aeiou"
+
+
+for caractere in string:
+    if caractere in vogais:
+        contagem_vogais += 1
+
+
+print(f"O número de vogais na string é: {contagem_vogais}")
