@@ -1,0 +1,31 @@
+Crie um programa que solicite ao usuário dois números e uma operação (adição, subtração, multiplicação ou divisão) e exiba o resultado.
+
+numero1 = float(input("Digite o primeiro número: "))
+
+numero2 = float(input("Digite o segundo número: "))
+
+operacao = input("Escolha uma operação (adição, subtração, multiplicação ou divisão): ")
+
+if operacao == "adição":
+    resultado = numero1 + numero2
+
+elif operacao == "subtração":
+    
+resultado = numero1 - numero2
+
+elif operacao == "multiplicação":
+    
+resultado = numero1 * numero2
+
+elif operacao == "divisão":
+  
+if numero2 != 0:
+        
+resultado = numero1 / numero2
+    
+else:
+        resultado = "Erro: Divisão por zero!"
+
+else:
+    resultado = "Operação inválida"
+print(f"Resultado da {operacao}: {resultado}")
