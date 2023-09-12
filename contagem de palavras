@@ -1,0 +1,9 @@
+Desenvolva um programa que conte o número de palavras em uma frase ou parágrafo fornecido pelo usuário.
+
+
+frase = input("Digite uma frase ou parágrafo: ")
+
+palavras = frase.split()
+numero_de_palavras = len(palavras)
+
+print(f"O número de palavras na frase é: {numero_de_palavras}")
