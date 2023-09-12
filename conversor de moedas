@@ -1,0 +1,14 @@
+Desenvolva um programa que converta um valor em real para outra moeda (por exemplo, dolar, euros, libras, ienes) com base em taxas de conversão fornecidas pelo usuário.
+
+  
+valor_em_reais = float(input("Digite o valor em reais a ser convertido: "))
+
+
+moeda_destino = input("Digite a moeda de destino (exemplo: USD, EUR, GBP, JPY): ").upper()
+taxa_conversao = float(input(f"Digite a taxa de conversão de 1 real para {moeda_destino}: "))
+
+
+valor_convertido = valor_em_reais / taxa_conversao
+
+
+print(f"O valor em {moeda_destino} é: {valor_convertido:.2f}")
