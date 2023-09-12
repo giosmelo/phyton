@@ -1,0 +1,9 @@
+Escreva um programa que solicite uma string ao usuário e exiba a mesma string invertida.
+# Solicita ao usuário uma string
+string_original = input("Digite uma string: ")
+
+# Inverte a string
+string_invertida = string_original[::-1]
+
+# Exibe a string invertida
+print(f"A string invertida é: {string_invertida}")
